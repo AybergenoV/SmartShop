@@ -1,0 +1,13 @@
+@base=http://electro-life.vivian-legend.uz
+@token = 5|RYDt6DIlMz644dvjuomZT9CDvNdBO2Z7f9I6QT0N
+# login
+POST  {{base}}/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "pincode":"1234"    
+}
+###
+GET {{base}}/api/getme
+Content-Type: application/json
+Authorization: Bearer {{token}}
